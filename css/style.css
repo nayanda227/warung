@@ -1,0 +1,110 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #ffcc00;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #fff;
+}
+
+/* Section styling */
+.section {
+    padding: 80px 0;
+    text-align: center;
+    padding-top: 100px; /* Menyesuaikan dengan navbar yang fixed */
+}
+
+.section h1, .section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.section p, .section ul {
+    font-size: 1.2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Home section */
+#home {
+    background-color: #ffc107;
+}
+
+/* Menu section */
+#menu {
+    background-color: #ff5722;
+    color: white;
+}
+
+/* Lokasi section */
+#lokasi {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Kontak section */
+#kontak {
+    background-color: #2196f3;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    h1, h2 {
+        font-size: 1.8rem;
+    }
+
+    p, ul {
+        font-size: 1rem;
+    }
+}
